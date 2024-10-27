@@ -173,7 +173,7 @@ nav ul li a:hover {
     color: #555;
 }
 
-/* ภาพ
+/* ภาพ */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -186,25 +186,32 @@ nav ul li a:hover {
     max-width: 350px;
     border-radius: 10px;
     transition: transform 0.3s;
-} */
+}
 
 .gallery img:hover {
     transform: scale(1.05);
 }
 /* วิดีโอ */
 .video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    padding-bottom: 56.25%; /* อัตราส่วน 16:9 */
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
 }
 
-.video-container video {
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 800px;
+    height: 100%;
     border: 2px solid #feb47b;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
 
 /* สมาชิก */
 .team-members {
