@@ -1,4 +1,4 @@
-# Physical_computing 	:red_circle: :yellow_circle: :green_circle:
+# Physical_computing 	:red_circle:
 
 
 ## วัตถุประสงค์ของโครงงาน
