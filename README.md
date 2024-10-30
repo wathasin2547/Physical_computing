@@ -1,4 +1,4 @@
-# Physical_computing 	:heart:	:yellow_heart: :green_heart:
+# Physical_computing:heart:yellow_heart::green_heart:
 
 
 ## วัตถุประสงค์ของโครงงาน
