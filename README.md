@@ -1,4 +1,4 @@
-### Physical_computing
+# Physical_computing
 
 1. วาทะศิลป์ ห้วยหงษ์ทอง 66070183
 2. พงศ์พศุตม์ บุญดี 66070122
