@@ -38,6 +38,8 @@
   - Switch เปิด/ปิด
   - สายไฟและ Breadboard
   - ตัวต้านทาน 220Ω (หรือค่าที่เหมาะสม)
+
+    ![img1.png](Image/img1.png)
   
   สร้างวงจร
   - เชื่อมต่อ Relay กับ Arduino: ใช้พอร์ต Digital เพื่อควบคุมแต่ละ Relay
