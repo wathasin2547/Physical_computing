@@ -1,6 +1,6 @@
 # Physical_computing :star2:	
 
-## [Webpage ของโครงงาน] (https://wathasin2547.github.io/Physical_computing/)
+## [Webpage ของโครงงาน](https://wathasin2547.github.io/Physical_computing/)
 
 ## วัตถุประสงค์ของโครงงาน
 
