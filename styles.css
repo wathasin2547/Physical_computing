@@ -37,7 +37,18 @@ header p {
     animation-delay: 0.5s;
     animation-fill-mode: both;
 }
+/* Source Code */
+.code-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
 
+pre {
+    margin: 0;
+}
 /* Navigatebar */
 nav {
     background-color: #ffffff;
