@@ -6,6 +6,7 @@
     <title>โปรเจคไฟจราจร</title>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -19,18 +20,21 @@
     <nav>
         <ul>
             <li><a href="#home">หน้าแรก</a></li>
-            <li><a href="#about">เกี่ยวกับ</a></li>
+            <li><a href="#about">บทคัดย่อ</a></li>
             <li><a href="#features">คุณสมบัติ</a></li>
-            <li><a href="#gallery">ภาพตัวอย่าง</a></li>
+            <li><a href="#gallery">อุปกรณ์ที่ใช้</a></li>
+            <li><a href="#demo">วิดีโอตัวอย่าง</a></li>
             <li><a href="#team">สมาชิกในกลุ่ม</a></li>
+            <li><a href="#source-code">Source Code</a></li>
+        
         </ul>
     </nav>
 
     <!-- Hero -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h2>ยินดีต้อนรับสู่โปรเจคไฟจราจร</h2>
-            <p>เพิ่มประสิทธิภาพการจราจรด้วยเทคโนโลยีไฟสัญญาณอัจฉริยะ</p>
+            <h2>Traffic Light</h2>
+            <p>เพิ่มประสิทธิภาพการจราจรด้วยเทคโนโลยีไฟสัญญาณ</p>
         </div>
     </section>
 
@@ -39,9 +43,9 @@
 
         <!-- เกี่ยวกับ -->
         <section class="section" id="about">
-            <h2>เกี่ยวกับโปรเจค</h2>
-            <p>โปรเจคไฟจราจรเป็นโครงการที่มุ่งเน้นการพัฒนาและปรับปรุงระบบไฟสัญญาณจราจรให้มีประสิทธิภาพมากยิ่งขึ้น ด้วยการใช้เทคโนโลยีสมัยใหม่ เช่น ระบบตรวจจับยานพาหนะ การปรับเปลี่ยนสัญญาณตามสภาพการจราจร และการเชื่อมต่อกับระบบอัจฉริยะอื่นๆ เพื่อเพิ่มความปลอดภัยและลดปัญหาการจราจรติดขัดในเมือง</p>
-        </section>
+            <h2>บทคัดย่อ</h2>
+            <p>โครงงานนี้มีวัตถุประสงค์เพื่อออกแบบและสร้างสัญญาณไฟจราจรจำลองโดยใช้ Arduino R4 เป็นตัวควบคุมสลับการทำงานของไฟ LED ทั้งสามสี ได้แก่ สีแดง สีเหลือง และสีเขียวตามลำดับเวลาเหมือนสัญญาณไฟจราจรในชีวิตจริง ระบบที่พัฒนานี้เน้นการตั้งค่าเวลาในการเปลี่ยนสัญญาณไฟอย่างเหมาะสม เพื่อให้การทำงานคล้ายคลึงกับสัญญาณไฟจราจรในเมือง โครงงานนี้มีประโยชน์ต่อการเรียนรู้ด้านการเขียนโปรแกรม การออกแบบวงจร และการประยุกต์ใช้ไมโครคอนโทรลเลอร์ในการควบคุมอุปกรณ์อิเล็กทรอนิกส์ ช่วยส่งเสริมความเข้าใจในการควบคุมสัญญาณไฟและการจัดการจราจรโดยใช้ระบบอัตโนมัติ ซึ่งสามารถต่อยอดการเรียนรู้และพัฒนาไปสู่การใช้งานในระบบควบคุมอื่น ๆ ที่ซับซ้อนขึ้น โครงงานนี้ช่วยฝึกฝนทักษะการแก้ปัญหา การวิเคราะห์ และการออกแบบระบบควบคุม ทั้งยังสนับสนุนให้ผู้เรียนสามารถนำความรู้ที่ได้ไปใช้ในงานด้านการจราจรหรือระบบอัตโนมัติในอนาคต
+            </section>
 
         <!-- คุณสมบัติ -->
         <section class="section" id="features">
@@ -89,7 +93,7 @@
         </section>
 
         <!-- วิดีโอ -->
-        <section class="section" id="video">
+        <section class="section" id="demo">
             <h2>วิดีโอตัวอย่าง</h2>
             <div class="video-container">
                 <iframe 
@@ -126,12 +130,104 @@
             </div>
         </section>
 
+        <!-- Source Code -->
+        <section class="section" id="source-code">
+            <h2>Source Code</h2>
+            <div class="code-container">
+                <pre><code class="language-cpp">
+// C++ code
+//
+int green1=6,yellew1=7,green2=8,yellew2=9;
+int green3=10,yellew3=11,green4=12,yellew4=13;
+int sw=5,blink=4;
+int green=5000, yellow=3000, taffic_delay=2000;
+
+void setup()
+{
+  pinMode(green1, OUTPUT);
+  pinMode(yellew1, OUTPUT);
+  pinMode(green2, OUTPUT);
+  pinMode(yellew2, OUTPUT);
+  pinMode(green3, OUTPUT);
+  pinMode(yellew3, OUTPUT);
+  pinMode(green4, OUTPUT);
+  pinMode(yellew4, OUTPUT);
+  pinMode(blink, OUTPUT);
+  pinMode(sw, INPUT_PULLUP);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  if(!digitalRead(sw)){
+    
+    while(!digitalRead(sw)){
+      //ชุดที่1
+      Serial.println('1');
+      digitalWrite(green1,HIGH); 
+      delay(green);
+      digitalWrite(yellew1,HIGH);
+      digitalWrite(green1,LOW); 
+      delay(yellow); 
+      digitalWrite(yellew1,LOW); 
+      delay(taffic_delay);
+      
+      //ชุดที่2
+      Serial.println('2');
+      digitalWrite(green2,HIGH); 
+      delay(green);
+      digitalWrite(yellew2,HIGH); 
+      digitalWrite(green2,LOW);
+      delay(yellow); 
+      digitalWrite(yellew2,LOW); 
+      delay(taffic_delay);
+      
+      //ชุดที่3
+      Serial.println('3');
+      digitalWrite(green3,HIGH); 
+      delay(green);
+      digitalWrite(yellew3,HIGH); 
+      digitalWrite(green3,LOW);
+      delay(yellow); 
+      digitalWrite(yellew3,LOW); 
+      delay(taffic_delay);
+      
+      //ชุดที่4
+      Serial.println('4');
+      digitalWrite(green4,HIGH); 
+      delay(green);
+      digitalWrite(yellew4,HIGH); 
+      digitalWrite(green4,LOW); 
+      delay(yellow); 
+      digitalWrite(yellew4,LOW); 
+      delay(taffic_delay);
+    }
+ 
+  } else {
+    Serial.println('0');
+    digitalWrite(blink,HIGH); 
+    delay(1000); 
+    digitalWrite(blink,LOW);
+    delay(1000);  
+  }
+}
+                </code></pre>
+            </div>
+        </section>
+
     </div>
+
+            
+    
 
     <!-- ส่วนท้าย (Footer) -->
     <footer>
         <p>Project</p>
     </footer>
+
+        <!-- Optional: Include Prism.js for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
 
 </body>
 </html>

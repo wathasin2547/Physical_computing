@@ -37,7 +37,26 @@ header p {
     animation-delay: 0.5s;
     animation-fill-mode: both;
 }
+/* Source Code */
+.code-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+/* สมาชิก */
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 35px;
+    justify-items: center;
+    align-items: center;
+}
 
+pre {
+    margin: 0;
+}
 /* Navigatebar */
 nav {
     background-color: #ffffff;
@@ -213,14 +232,7 @@ nav ul li a:hover {
 }
 
 
-/* สมาชิก */
-.team-members {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 35px;
-    justify-items: center;
-    align-items: center;
-}
+
 
 .team-member {
     text-align: center;
