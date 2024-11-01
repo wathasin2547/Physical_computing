@@ -1,6 +1,11 @@
 # Physical_computing :star2:	
 
+## POSTER
+   ![IMG_POSTER.jpg](Image/IMG_POSTER.jpg)
+
+
 ## [WEBPAGE ของโครงงาน](https://wathasin2547.github.io/Physical_computing/)
+
 ## [VIDEO DEMO](https://www.youtube.com/watch?v=b7bGTxSVTHw&t=4s)
 
 ## วัตถุประสงค์ของโครงงาน
